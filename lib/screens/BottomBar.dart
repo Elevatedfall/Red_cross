@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:red_cross/screens/Activity.dart';
+import 'package:red_cross/screens/homepage.dart';
 
 import 'announcement.dart';
 
@@ -15,7 +16,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedindex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    const Text("Home"),
+    HomePage(),
     AnnouncementPage(),
     ActivityPage(),
   ];
@@ -28,9 +29,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Redcross'),
-      ),
       body: Center(
         child: _widgetOptions[_selectedindex],
       ),

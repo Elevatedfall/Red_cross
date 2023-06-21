@@ -17,7 +17,36 @@ class _AnnouncementPageState extends State<AnnouncementPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Announcement Page'),
+        backgroundColor: Colors.red,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/logo.jpg'),
+                ),
+                SizedBox(width: 8),
+                Text(
+                  'Redcross',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+            Text(
+              'Announcement',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -39,10 +68,8 @@ class _AnnouncementPageState extends State<AnnouncementPage> {
   }
 
   Widget _buildAnnouncementSection(
-    String sectionTitle,
-    List<Announcement> announcements, {
-    required bool isMainBranch,
-  }) {
+      String sectionTitle, List<Announcement> announcements,
+      {required bool isMainBranch}) {
     return Container(
       padding: EdgeInsets.all(16),
       child: Column(
@@ -73,31 +100,29 @@ class _AnnouncementPageState extends State<AnnouncementPage> {
             child: Row(
               children: [
                 if (announcements.isNotEmpty)
-                  Row(
-                    children: announcements.map((announcement) {
-                      return Card(
-                        margin:
-                            EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-                        child: Column(
-                          children: [
-                            if (announcement.text != null) ...[
-                              ListTile(
-                                leading: Icon(announcement.icon),
-                                title: Text(announcement.text!),
-                              ),
-                            ],
-                            if (announcement.imageFile != null)
-                              Image.file(
-                                announcement.imageFile!,
-                                fit: BoxFit.contain,
-                                width: 200,
-                                height: 200,
-                              ),
+                  ...announcements.map((announcement) {
+                    return Card(
+                      margin: EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                      child: Column(
+                        children: [
+                          if (announcement.text != null) ...[
+                            ListTile(
+                              leading: Icon(announcement.icon),
+                              title: Text(announcement.text!),
+                            ),
+                            SizedBox(height: 8),
                           ],
-                        ),
-                      );
-                    }).toList(),
-                  )
+                          if (announcement.imageFile != null)
+                            Image.file(
+                              announcement.imageFile!,
+                              fit: BoxFit.contain,
+                              width: 200,
+                              height: 200,
+                            ),
+                        ],
+                      ),
+                    );
+                  }).toList()
                 else
                   Text('No announcement'),
               ],
