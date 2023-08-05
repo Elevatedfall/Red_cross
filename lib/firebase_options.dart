@@ -63,7 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '284954894619',
     projectId: 'redcross-dfef7',
     storageBucket: 'redcross-dfef7.appspot.com',
-    iosClientId: '284954894619-9if3houqs9if3etiakmhieumkmfbn797.apps.googleusercontent.com',
+    iosClientId:
+        '284954894619-9if3houqs9if3etiakmhieumkmfbn797.apps.googleusercontent.com',
     iosBundleId: 'com.example.redCross',
   );
 }
