@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>284954894619-9if3houqs9if3etiakmhieumkmfbn797.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.284954894619-9if3houqs9if3etiakmhieumkmfbn797</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC8Uqq9k11TxJ5oLk5xILx24BhvT0PqTMI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>284954894619</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.redCross</string>
+	<key>PROJECT_ID</key>
+	<string>redcross-dfef7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>redcross-dfef7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:284954894619:ios:c105bfa2b53ed56016f3be</string>
+</dict>
+</plist>

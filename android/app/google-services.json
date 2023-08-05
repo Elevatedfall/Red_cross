@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "284954894619",
+    "project_id": "redcross-dfef7",
+    "storage_bucket": "redcross-dfef7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284954894619:android:5a4d808dbfb5994b16f3be",
+        "android_client_info": {
+          "package_name": "com.example.red_cross"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284954894619-9nr06rn9a9rd6h03u92cf04ab0cppk9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjwxXPIjJuJREzImyZHrNlkJZXkLR4aPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284954894619-9nr06rn9a9rd6h03u92cf04ab0cppk9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
